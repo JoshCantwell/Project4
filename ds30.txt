@@ -1,1000 +1,1000 @@
-g
-b
-g
-g
-g
-g
-g
-g
-g
-g
-g
-g
-g
-g
-b
-g
-g
-g
-g
-g
-g
-g
-g
-g
-g
-g
-g
-g
-g
-g
-g
-g
-g
-g
-g
-g
-g
-g
-g
-g
-g
-g
-g
-g
-b
-g
-g
-g
-g
-g
-g
-g
-g
-g
-b
-g
-g
-g
-b
-g
-g
-g
-g
-g
-g
-g
-g
-g
-g
-g
-g
-g
-g
-g
-g
-g
-g
-g
-g
-b
-g
-g
-g
-b
-b
-g
-g
-g
-g
-g
-b
-b
-b
-g
-g
-g
-g
-g
-g
-g
-g
-g
-g
-g
-g
-g
-g
-g
-g
-g
-b
-g
-b
-g
-g
-b
-g
-g
-g
-b
-g
-g
-g
-g
-g
-g
-g
-g
-g
-g
-g
-g
-g
-g
-b
-g
-g
-g
-g
-g
-g
-g
-g
-g
-g
-g
-g
-b
-g
-g
-b
-g
-b
-g
-g
-g
-g
-b
-g
-g
-g
-g
-g
-g
-g
-g
-g
-b
-g
-b
-g
-g
-b
-g
-b
-g
-g
-g
-g
-g
-b
-g
-g
-b
-g
-g
-g
-b
-g
-g
-g
-g
-g
-g
-g
-g
-g
-g
-g
-g
-g
-g
-g
-g
-g
-b
-g
-g
-g
-g
-g
-g
-g
-g
-g
-g
-g
-g
-g
-g
-g
-g
-g
-g
-b
-g
-g
-g
-b
-g
-g
-g
-g
-g
-g
-g
-g
-g
-g
-g
-g
-g
-b
-g
-g
-g
-g
-g
-g
-g
-g
-g
-g
-g
-g
-g
-g
-b
-g
-g
-g
-g
-g
-b
-g
-g
-g
-g
-g
-g
-b
-b
-g
-b
-g
-g
-g
-g
-g
-g
-g
-g
-g
-g
-g
-g
-g
-g
-g
-g
-b
-g
-g
-g
-g
-g
-b
-g
-g
-g
-g
-g
-g
-g
-g
-b
-g
-g
-g
-b
-b
-g
-b
-g
-g
-g
-g
-g
-b
-b
-g
-b
-g
-g
-g
-g
-g
-g
-b
-g
-g
-g
-g
-g
-g
-g
-g
-g
-g
-g
-g
-g
-g
-g
-g
-g
-g
-g
-b
-g
-g
-g
-g
-g
-g
-g
-g
-g
-g
-g
-g
-g
-g
-g
-g
-g
-g
-g
-g
-g
-g
-g
-g
-g
-b
-g
-g
-g
-g
-g
-g
-g
-g
-g
-g
-g
-g
-g
-g
-b
-g
-g
-g
-g
-g
-b
-g
-g
-g
-g
-g
-b
-g
-g
-g
-g
-g
-g
-g
-g
-g
-g
-g
-g
-g
-g
-g
-g
-g
-g
-g
-g
-b
-g
-g
-g
-g
-g
-g
-g
-g
-g
-g
-g
-g
-g
-g
-g
-g
-g
-g
-g
-g
-g
-g
-g
-g
-g
-g
-g
-b
-g
-b
-g
-g
-g
-b
-g
-g
-g
-g
-g
-g
-g
-b
-g
-g
-g
-g
-g
-g
-g
-g
-g
-g
-g
-g
-g
-g
-g
-g
-g
-g
-g
-g
-g
-g
-b
-g
-b
-g
-g
-g
-g
-b
-g
-g
-g
-b
-g
-g
-b
-g
-g
-g
-g
-g
-g
-g
-g
-b
-g
-b
-g
-g
-b
-g
-g
-b
-g
-g
-g
-g
-b
-g
-g
-g
-g
-g
-g
-b
-g
-g
-g
-g
-g
-g
-b
-g
-g
-g
-g
-g
-g
-g
-g
-g
-g
-g
-g
-g
-b
-g
-g
-b
-g
-g
-g
-g
-g
-g
-g
-g
-g
-g
-g
-g
-b
-g
-g
-g
-g
-b
-g
-g
-g
-g
-g
-g
-b
-g
-g
-b
-g
-b
-g
-b
-g
-g
-g
-g
-g
-b
-g
-g
-g
-g
-b
-g
-g
-g
-g
-g
-g
-g
-g
-g
-b
-b
-g
-b
-g
-g
-b
-g
-g
-g
-g
-g
-g
-g
-g
-g
-g
-g
-b
-g
-g
-b
-g
-b
-g
-g
-b
-g
-g
-g
-b
-g
-g
-g
-g
-g
-g
-g
-g
-g
-g
-g
-g
-b
-g
-g
-g
-g
-g
-g
-g
-g
-g
-g
-g
-b
-b
-g
-g
-g
-g
-g
-g
-g
-g
-g
-g
-g
-g
-g
-g
-g
-b
-g
-g
-b
-g
-g
-g
-g
-g
-g
-g
-g
-g
-g
-g
-g
-g
-g
-b
-g
-g
-g
-g
-b
-g
-g
-g
-b
-g
-g
-g
-g
-g
-g
-g
-b
-g
-g
-g
-g
-b
-g
-g
-g
-g
-g
-g
-g
-b
-g
-g
-g
-b
-g
-g
-g
-g
-g
-g
-b
-g
-g
-g
-b
-g
-g
-b
-g
-g
-g
-g
-g
-g
-g
-g
-g
-g
-g
-g
-g
-g
-b
-g
-g
-g
-g
-g
-b
-g
-g
-g
-g
-g
-g
-g
-b
-g
-g
-g
-b
-g
-g
-g
-g
-g
-b
-g
-g
-g
-g
-b
-g
-g
-g
-g
-g
-g
-g
-b
-g
-b
-g
-g
-g
-g
-g
-g
-g
-g
-g
-g
-g
-g
-b
-g
-g
-b
-g
-g
-g
-g
-g
-g
-b
-g
-g
-b
-g
-g
-b
-g
-g
-g
-g
-g
-b
-g
-g
-g
-g
-g
-g
-g
-g
-g
-g
-g
-g
-g
-g
-g
-b
-g
-g
-b
-b
-g
-b
-g
-g
-b
-g
-b
-g
-g
-g
-g
-g
-g
-g
-g
-g
-g
-b
-b
-g
-g
-g
-g
-g
-g
-g
-g
-g
-g
-g
-b
-b
-g
-g
-g
-g
-g
-g
-g
-g
-g
-g
-b
-g
-g
-g
-g
-g
-g
-g
-g
-g
-g
-g
-g
-g
-g
-b
-g
-g
-g
-g
-g
-g
-g
-b
-g
-g
-g
-g
-g
-g
-g
-g
-g
-g
-g
-b
-g
-g
-g
-g
-g
-g
-g
-b
-b
-g
-b
-g
-g
-g
-g
-g
-g
-b
-g
-g
-b
-b
-g
-g
-g
-g
-g
-g
-g
-g
-g
-g
-g
-b
-g
-g
-g
-g
-g
-g
-g
-g
-g
-g
-g
-g
-g
-b
-g
-g
-g
-g
-g
-g
-g
-g
-g
-g
-b
-g
-g
-g
-g
-g
-g
-g
-g
+g 61
+g 51
+g 63
+g 19
+g 58
+g 29
+b 0
+g 76
+g 42
+g 34
+g 60
+g 34
+g 19
+g 48
+g 17
+g 36
+g 46
+g 34
+g 94
+g 70
+g 45
+g 26
+g 30
+g 78
+g 18
+g 28
+g 92
+g 37
+g 38
+g 93
+g 83
+g 98
+g 45
+g 46
+g 16
+g 4
+g 75
+g 16
+g 79
+g 16
+g 49
+g 40
+g 50
+g 68
+g 89
+g 68
+g 5
+g 36
+g 1
+g 97
+g 8
+g 44
+g 25
+g 36
+g 23
+g 41
+g 62
+g 15
+g 76
+b 0
+g 9
+g 60
+g 98
+g 53
+g 5
+g 15
+g 55
+g 80
+g 31
+g 35
+g 94
+g 78
+g 76
+g 46
+g 47
+g 66
+g 13
+g 50
+g 1
+g 12
+g 49
+g 7
+g 56
+g 72
+g 41
+g 77
+g 14
+g 5
+g 92
+g 90
+g 3
+g 1
+g 49
+g 2
+g 54
+g 55
+g 17
+g 10
+g 34
+g 46
+g 46
+g 30
+g 26
+g 23
+g 74
+g 71
+g 87
+g 85
+g 23
+g 86
+g 95
+g 70
+g 94
+g 52
+g 43
+g 36
+g 30
+g 57
+g 39
+g 22
+g 46
+g 42
+g 23
+g 95
+g 42
+g 75
+g 49
+g 59
+g 85
+g 82
+g 5
+g 30
+g 13
+g 29
+g 53
+g 85
+g 98
+g 39
+g 69
+g 22
+g 27
+g 65
+g 90
+g 22
+g 16
+g 34
+g 56
+g 46
+g 89
+g 94
+g 66
+g 36
+g 37
+g 87
+g 31
+g 80
+g 63
+g 78
+g 38
+g 48
+g 61
+g 41
+g 78
+g 72
+g 68
+g 33
+g 58
+g 68
+g 70
+g 26
+g 88
+g 97
+g 91
+g 80
+g 20
+g 8
+g 15
+g 75
+g 53
+g 4
+g 70
+g 18
+g 40
+g 6
+g 7
+g 69
+g 84
+g 68
+g 49
+g 22
+g 17
+g 11
+g 63
+g 96
+g 84
+g 31
+g 28
+g 41
+b 0
+g 98
+g 68
+g 86
+g 97
+g 58
+g 67
+g 16
+g 65
+g 81
+g 91
+g 19
+g 85
+g 60
+g 37
+g 24
+g 67
+g 44
+g 92
+g 52
+g 14
+g 40
+g 74
+g 29
+g 51
+g 37
+g 26
+g 34
+g 66
+g 54
+g 74
+g 66
+g 52
+g 41
+g 53
+g 50
+b 0
+g 20
+g 64
+g 65
+g 2
+g 57
+g 82
+g 85
+g 18
+g 21
+g 8
+g 83
+g 63
+g 1
+g 35
+g 75
+g 41
+g 8
+g 4
+g 91
+g 45
+g 30
+g 24
+g 10
+g 83
+g 96
+g 76
+g 36
+g 38
+g 29
+g 84
+g 37
+g 47
+g 49
+g 1
+g 47
+g 5
+g 84
+g 33
+g 22
+g 4
+g 39
+g 6
+g 65
+g 41
+g 41
+g 40
+g 80
+g 50
+g 44
+g 70
+g 93
+g 72
+g 93
+g 5
+g 56
+g 90
+g 79
+g 90
+g 28
+g 7
+g 73
+g 65
+g 54
+g 24
+g 64
+g 2
+g 27
+g 47
+g 33
+g 49
+g 51
+g 73
+g 54
+g 16
+g 13
+g 95
+g 54
+g 91
+g 44
+g 98
+g 63
+g 39
+g 69
+g 57
+g 42
+g 27
+g 48
+g 22
+g 16
+g 76
+g 28
+g 90
+g 40
+g 82
+g 13
+g 6
+g 83
+g 38
+g 51
+g 15
+g 88
+g 2
+g 88
+g 41
+g 18
+b 0
+g 37
+g 70
+g 92
+g 80
+g 69
+g 54
+g 18
+g 39
+g 12
+g 60
+g 64
+g 58
+g 80
+g 79
+g 34
+g 9
+g 68
+g 74
+g 90
+g 81
+g 78
+g 74
+g 18
+g 31
+g 89
+g 5
+g 33
+g 77
+g 46
+g 49
+g 75
+g 84
+g 20
+g 68
+g 63
+g 87
+g 23
+g 81
+g 25
+g 33
+g 42
+g 88
+g 92
+g 21
+g 68
+g 27
+g 31
+g 37
+b 0
+g 22
+g 17
+g 77
+g 94
+g 35
+g 9
+g 82
+g 39
+g 40
+g 58
+g 85
+g 87
+g 35
+g 68
+g 8
+g 2
+g 32
+g 93
+g 24
+g 14
+g 19
+g 57
+g 54
+g 6
+g 48
+g 76
+g 74
+g 73
+g 6
+g 10
+g 74
+g 26
+g 25
+g 52
+g 21
+g 59
+g 59
+g 2
+g 98
+g 97
+g 61
+g 84
+g 85
+g 94
+g 54
+g 91
+g 94
+g 84
+g 85
+g 19
+b 0
+g 3
+g 75
+g 52
+g 10
+g 24
+g 29
+g 82
+g 98
+g 33
+g 93
+g 71
+g 59
+g 17
+g 22
+g 80
+g 76
+g 81
+g 81
+g 73
+g 77
+g 43
+g 59
+g 63
+g 36
+g 12
+g 55
+g 31
+g 96
+g 39
+g 51
+g 94
+g 42
+g 27
+g 48
+g 50
+g 49
+g 75
+g 34
+g 46
+g 10
+g 26
+g 18
+g 69
+g 43
+g 40
+g 49
+g 21
+g 20
+g 31
+g 92
+g 97
+g 72
+g 52
+g 61
+g 9
+g 62
+g 15
+g 40
+g 60
+g 52
+g 89
+g 53
+g 93
+g 15
+g 2
+g 44
+g 65
+g 76
+g 78
+g 12
+g 86
+g 5
+g 29
+g 54
+g 47
+g 69
+g 4
+g 66
+g 90
+g 33
+g 59
+g 86
+g 6
+g 11
+g 49
+g 15
+g 73
+g 62
+g 54
+g 32
+g 16
+g 44
+g 86
+g 8
+g 60
+g 86
+g 52
+g 24
+g 63
+g 30
+g 34
+g 48
+g 33
+g 63
+g 4
+g 80
+g 32
+g 6
+g 47
+g 21
+g 40
+g 8
+g 8
+g 46
+g 19
+g 55
+g 60
+g 90
+g 17
+g 15
+g 24
+g 33
+g 57
+g 11
+g 41
+g 16
+g 97
+g 91
+g 40
+g 60
+g 22
+g 73
+g 9
+g 56
+g 37
+g 13
+g 35
+g 67
+g 18
+g 83
+g 88
+g 58
+g 89
+g 95
+g 3
+g 9
+g 49
+g 63
+b 0
+g 66
+g 76
+g 24
+b 0
+g 33
+g 33
+g 39
+g 49
+g 30
+g 30
+g 88
+g 90
+g 50
+g 62
+g 97
+g 5
+g 97
+g 10
+g 41
+g 66
+g 28
+g 25
+g 53
+g 86
+g 15
+g 47
+g 87
+g 22
+g 97
+g 50
+g 22
+g 64
+g 27
+g 45
+g 63
+g 58
+g 76
+g 3
+g 9
+g 5
+g 31
+g 97
+g 95
+g 82
+g 60
+g 92
+g 87
+g 56
+g 3
+g 29
+g 23
+g 31
+g 52
+g 77
+g 16
+g 67
+g 25
+g 4
+g 87
+g 23
+g 54
+g 9
+g 86
+g 80
+g 54
+g 50
+g 39
+g 29
+g 53
+g 46
+g 35
+g 83
+g 42
+g 29
+g 66
+g 1
+g 22
+g 52
+g 58
+g 25
+g 82
+g 81
+g 54
+g 33
+g 57
+g 70
+g 2
+g 81
+g 73
+g 87
+g 3
+g 28
+g 96
+g 89
+g 7
+g 49
+g 40
+g 45
+g 79
+g 92
+g 91
+g 15
+g 76
+g 35
+g 42
+g 41
+g 34
+g 65
+g 93
+g 92
+g 88
+g 74
+g 73
+g 44
+g 9
+g 31
+g 13
+g 9
+g 11
+g 86
+g 96
+g 15
+g 14
+g 92
+g 3
+g 19
+g 42
+g 42
+g 64
+g 22
+g 35
+g 55
+g 35
+g 10
+g 88
+g 78
+g 49
+g 23
+g 42
+g 43
+g 17
+g 29
+g 17
+g 90
+g 73
+g 26
+g 20
+g 85
+g 33
+g 32
+g 70
+g 28
+g 45
+g 82
+g 21
+g 46
+g 3
+g 64
+g 88
+g 67
+g 84
+g 24
+g 21
+g 19
+g 32
+g 10
+g 95
+g 81
+g 34
+g 38
+g 24
+g 49
+g 65
+g 41
+g 38
+g 40
+g 65
+g 56
+g 24
+g 96
+g 86
+g 94
+g 25
+g 32
+g 78
+g 47
+g 79
+g 79
+g 10
+g 68
+g 45
+g 94
+g 91
+g 67
+g 12
+g 22
+g 77
+g 8
+g 5
+g 10
+g 44
+g 29
+g 57
+g 11
+g 68
+g 93
+g 49
+g 32
+g 51
+g 73
+g 29
+g 38
+g 66
+g 54
+g 69
+g 43
+b 0
+g 49
+g 23
+g 10
+g 16
+g 69
+g 4
+g 6
+g 35
+g 16
+g 29
+g 11
+g 25
+g 32
+g 22
+g 69
+g 59
+g 77
+g 80
+g 28
+g 72
+g 30
+g 58
+g 22
+g 2
+g 87
+g 60
+g 69
+g 40
+g 30
+g 13
+g 41
+g 77
+g 35
+g 49
+g 92
+g 3
+g 53
+g 96
+g 38
+g 68
+g 26
+g 49
+g 93
+g 56
+g 69
+g 61
+g 16
+g 48
+g 41
+g 42
+g 19
+g 69
+g 98
+g 41
+g 72
+g 86
+g 2
+g 40
+g 28
+g 31
+g 51
+g 67
+g 9
+g 86
+g 17
+b 0
+g 89
+g 69
+g 97
+g 26
+g 38
+g 22
+g 76
+g 30
+g 79
+g 46
+g 91
+g 93
+g 92
+g 33
+g 35
+g 12
+g 2
+g 34
+g 53
+g 72
+g 22
+g 54
+g 13
+g 48
+g 83
+g 62
+g 14
+g 90
+g 48
+g 31
+g 91
+g 38
+g 1
+g 89
+g 65
+g 37
+g 10
+g 40
+g 67
+g 87
+g 86
+g 60
+g 82
+g 80
+g 91
+g 18
+g 92
+g 91
+g 50
+g 45
+g 64
+g 70
+g 97
+g 77
+g 19
+g 79
+g 39
+g 33
+g 70
+g 87
+g 63
+g 62
+g 26
+g 62
+g 50
+g 89
+g 1
+g 61
+g 28
+g 68
+g 49
+g 16
+g 27
+g 30
+g 96
+g 18
+g 46
+g 87
+g 10
+g 97
+g 31
+g 73
+g 68
+g 27
+g 49
+g 86
+g 7
+g 88
+g 18
+g 78
+g 76
+g 79
+g 39
+g 2
+g 43
+g 88
+g 91
+g 42
+g 48
+g 21
+g 9
+g 97
+g 35
+g 37
+g 27
+g 30
+g 53
+g 73
+g 16
+g 61
+g 69
+g 46
+g 35
+g 37
+g 73
+g 85
+g 24
+g 79
+g 74
+g 40
+g 56
+g 52
+g 21
+g 95
+g 54
+g 64
+g 82

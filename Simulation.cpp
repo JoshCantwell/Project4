@@ -136,7 +136,7 @@ void Simulation::RunSimulation() {
             for(int j = 0; j < fileOne->getNumberOfItems(); j++) {
                 int rand = RandomNumber();
                
-                    if(rand >= fileOne->getPercentageOfBadItems() - 1) {
+                    if(rand > fileOne->getPercentageOfBadItems() - 1) {
                         DataStructureFile << "g"   <<std::endl;
                     } else {
                         DataStructureFile << "b" << std::endl;
@@ -171,7 +171,7 @@ void Simulation::RunSimulation() {
         
     AnalyticalModel *am;
     am = new AnalyticalModel();
-    am->AnalyzeFileData(fileOne->getNumberOfBatches(), fileOne->getNumberOfItems(), fileOne->getItemsSampled());
+    am->AnalyzeFileData(numberOfBatches, fileOne->getNumberOfBatches(), fileOne->getNumberOfItems(), fileOne->getItemsSampled(), fileOne->getPercentageOfBadBatches(), fileOne->getPercentageOfBadItems());
 
 
     //Simulation 2
@@ -201,7 +201,7 @@ void Simulation::RunSimulation() {
             for(int j = 0; j < fileTwo->getNumberOfItems(); j++) {
                 int rand = RandomNumber();
                
-                    if(rand >= fileTwo->getPercentageOfBadItems() - 1) {
+                    if(rand > fileTwo->getPercentageOfBadItems() - 1) {
                         DataStructureFile << "g"   <<std::endl;
                     } else {
                         DataStructureFile << "b" << std::endl;
@@ -236,7 +236,7 @@ void Simulation::RunSimulation() {
     std::cout << "\nAnalyzing Data Sets:" << std::endl;
         
    
-    am->AnalyzeFileData(fileTwo->getNumberOfBatches(), fileOne->getNumberOfItems(), fileOne->getItemsSampled());
+    am->AnalyzeFileData(numberOfBatches, fileTwo->getNumberOfBatches(), fileTwo->getNumberOfItems(), fileTwo->getItemsSampled() , fileTwo->getPercentageOfBadBatches(), fileTwo->getPercentageOfBadItems());
 
     //Simulation 3
     badBatch = 0;
@@ -265,7 +265,7 @@ void Simulation::RunSimulation() {
             for(int j = 0; j < fileThree->getNumberOfItems(); j++) {
                 int rand = RandomNumber();
                
-                    if(rand >= fileThree->getPercentageOfBadItems() - 1) {
+                    if(rand > fileThree->getPercentageOfBadItems() - 1) {
                         DataStructureFile << "g"   <<std::endl;
                     } else {
                         DataStructureFile << "b" << std::endl;
@@ -300,7 +300,7 @@ void Simulation::RunSimulation() {
     std::cout << "\nAnalyzing Data Sets:" << std::endl;
         
    
-    am->AnalyzeFileData(fileOne->getNumberOfBatches(), fileOne->getNumberOfItems(), fileOne->getItemsSampled());
+    am->AnalyzeFileData(numberOfBatches, fileThree->getNumberOfBatches(), fileThree->getNumberOfItems(), fileThree->getItemsSampled() , fileThree->getPercentageOfBadBatches(), fileThree->getPercentageOfBadItems());
     //Simulation 4
     badBatch = 0;
     std::srand(time(0));
@@ -328,10 +328,10 @@ void Simulation::RunSimulation() {
             for(int j = 0; j < fileFour->getNumberOfItems(); j++) {
                 int rand = RandomNumber();
                
-                    if(rand >= fileFour->getPercentageOfBadItems() - 1) {
-                        DataStructureFile << "g"   <<std::endl;
+                    if(rand > fileFour->getPercentageOfBadItems() - 1) {
+                        DataStructureFile << "g" << " " << rand  <<std::endl;
                     } else {
-                        DataStructureFile << "b" << std::endl;
+                        DataStructureFile << "b" << " " << rand<< std::endl;
                         bad++;
                     }
             }
@@ -362,7 +362,7 @@ void Simulation::RunSimulation() {
     //Analyzing the Files
   
     std::cout << "\nAnalyze Data Sets:" << std::endl;
-    am->AnalyzeFileData(fileOne->getNumberOfBatches(), fileOne->getNumberOfItems(), fileOne->getItemsSampled());
+    am->AnalyzeFileData(numberOfBatches, fileFour->getNumberOfBatches(), fileFour->getNumberOfItems(), fileFour->getItemsSampled() , fileFour->getPercentageOfBadBatches(), fileFour->getPercentageOfBadItems());
   
     delete am;
 

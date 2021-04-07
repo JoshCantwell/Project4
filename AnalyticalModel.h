@@ -24,7 +24,7 @@ class AnalyticalModel {
 
         }
 
-       void AnalyzeFileData(int numberOfBatches, int numberOfItems, int getItemsSampled);
+       void AnalyzeFileData(int amountOfBadBatches, int numberOfBatches, int numberOfItems, int getItemsSampled, int getPercentageOfBadBatches, int getPercentageOfBadItems);
 
     private:
 
