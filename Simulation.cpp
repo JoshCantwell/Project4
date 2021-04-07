@@ -106,14 +106,13 @@ void Simulation::ReadFiles() {
 
 void Simulation::RunSimulation() {
         
+    //Simulation 1
     int badBatch = 0;
     std::srand(time(0));
-    //Simulation 1
     float flt = fileOne->getPercentageOfBadBatches()/100.0;
 
     int numberOfBatches = fileOne->getNumberOfBatches()*flt;
-    std::cout << numberOfBatches << std::endl;
-    std::cout << "Simulation 1:" << std::endl;
+    std::cout << "\n\nSimulation 1:" << std::endl;
     std::cout << "      Number of Batches of items:                     "  << fileOne->getNumberOfBatches()  << std::endl;
     std::cout << "      Number Of Items in each Batch:                  " << fileOne->getNumberOfItems() << std::endl;
     std::cout << "      Percentage of batches containing bad items:     " << fileOne->getPercentageOfBadBatches() << std::endl;
@@ -157,12 +156,10 @@ void Simulation::RunSimulation() {
             for(int j = 0; j < fileOne->getNumberOfItems(); j++) {
 
                 DataStructureFile << "g" << " " << rand <<std::endl;
-
             }
         
             DataStructureFile.close();
        }
-    
             badBatch++;
     }
 
@@ -170,7 +167,6 @@ void Simulation::RunSimulation() {
     
     //Analyzing the Files
     std::cout << "\nAnalyzing Data Sets:" << std::endl;
-
         
     int batch = 0;    
     for(int i=0; i < fileOne->getNumberOfBatches(); i++) {
@@ -184,77 +180,331 @@ void Simulation::RunSimulation() {
         if(!SimulationFile.is_open()){
             std::cout << "Unable to open " << fileName << std::endl;
         } else {
-       
-                
             
             int checks = 0;
-            
-            
-                
             int j = 1;
             while(!SimulationFile.eof()) {
-          
-                    
                
                 std::string read;
                 SimulationFile >> read;
     
                 if(j % (fileOne->getNumberOfItems()/fileOne->getItemsSampled()) == 0) {
-                
                     checks++;
                     if(read == "b"){
-                        
                         badItems++;
-                
                     }
                 }
                 j++;
-       
             }
        
             if(badItems > 0) {
-
                 std::cout << "  batch #" << batch << " is bad" << std::endl;
-        
-    
             }
-   
-                
             SimulationFile.close();
         }
-
         batch++;
 
     }
 
+
     //Simulation 2
-    std::cout << "Simulation 2:" << std::endl;
+    badBatch = 0;
+    std::srand(time(0));
+    flt = fileTwo->getPercentageOfBadBatches()/100.0;
+
+    numberOfBatches = fileTwo->getNumberOfBatches()*flt;
+    std::cout << "\n\nSimulation 2:" << std::endl;
     std::cout << "      Number of Batches of items:                     "  << fileTwo->getNumberOfBatches()  << std::endl;
     std::cout << "      Number Of Items in each Batch:                  " << fileTwo->getNumberOfItems() << std::endl;
     std::cout << "      Percentage of batches containing bad items:     " << fileTwo->getPercentageOfBadBatches() << std::endl;
     std::cout << "      Percentage of bad items in a bad batch:         " << fileTwo->getPercentageOfBadItems() << std::endl;
     std::cout << "      Number of items sampled:                        " << fileTwo->getNumberOfItems() << std::endl;
+   
+    //Creating the Files
+    std::cout << "\nGenerating data set:\n" << std::endl;
+    for(int i=0; i < fileTwo->getNumberOfBatches();i++) {
+
+        if(badBatch % (fileTwo->getNumberOfBatches()/numberOfBatches) == 0){
+                    
+            std::cout << "      Create bad set Batch # " << badBatch << " ";
+            std::string fileName = "ds" + std::to_string(i) + ".txt";
+            bool isBad;    
+            int bad = 0;
+            float badPercentage = 0; 
+            DataStructureFile.open(fileName);
+            for(int j = 0; j < fileTwo->getNumberOfItems(); j++) {
+                int rand = RandomNumber();
+               
+                    if(rand >= fileTwo->getPercentageOfBadItems() - 1) {
+                        DataStructureFile << "g"   <<std::endl;
+                    } else {
+                        DataStructureFile << "b" << std::endl;
+                        bad++;
+                    }
+            }
+ 
+            badPercentage = bad;
+            badPercentage = badPercentage/fileTwo->getNumberOfItems();
+            std::cout << "totBad = " << bad << " total = " << fileTwo->getNumberOfItems() << " badpct = " << fileTwo->getPercentageOfBadItems() << std::endl;
+        
+            DataStructureFile.close();
+                
+        } else {
+
+            std::string fileName = "ds" + std::to_string(i) + ".txt";
+            DataStructureFile.open(fileName);
+          
+            for(int j = 0; j < fileTwo->getNumberOfItems(); j++) {
+
+                DataStructureFile << "g" << " " << rand <<std::endl;
+            }
+        
+            DataStructureFile.close();
+       }
+            badBatch++;
+    }
+
+    std::cout << "      Total Bad sets = " << numberOfBatches << std::endl;
     
+    //Analyzing the Files
+    std::cout << "\nAnalyzing Data Sets:" << std::endl;
+        
+    batch = 0;    
+    for(int i=0; i < fileTwo->getNumberOfBatches(); i++) {
+
+        std::string fileName = "ds";
+        fileName += std::to_string(i);
+        fileName += ".txt";
+
+        SimulationFile.open(fileName);
+        int badItems = 0;
+        if(!SimulationFile.is_open()){
+            std::cout << "Unable to open " << fileName << std::endl;
+        } else {
+            
+            int checks = 0;
+            int j = 1;
+            while(!SimulationFile.eof()) {
+               
+                std::string read;
+                SimulationFile >> read;
+    
+                if(j % (fileTwo->getNumberOfItems()/fileTwo->getItemsSampled()) == 0) {
+                    checks++;
+                    if(read == "b"){
+                        badItems++;
+                    }
+                }
+                j++;
+            }
+       
+            if(badItems > 0) {
+                std::cout << "  batch #" << batch << " is bad" << std::endl;
+            }
+            SimulationFile.close();
+        }
+        batch++;
+
+    }
 
     //Simulation 3
+    badBatch = 0;
+    std::srand(time(0));
+    flt = fileThree->getPercentageOfBadBatches()/100.0;
 
-    std::cout << "Simulation 3:" << std::endl;
+    numberOfBatches = fileThree->getNumberOfBatches()*flt;
+    std::cout << "\n\nSimulation 3:" << std::endl;
     std::cout << "      Number of Batches of items:                     "  << fileThree->getNumberOfBatches()  << std::endl;
     std::cout << "      Number Of Items in each Batch:                  " << fileThree->getNumberOfItems() << std::endl;
     std::cout << "      Percentage of batches containing bad items:     " << fileThree->getPercentageOfBadBatches() << std::endl;
     std::cout << "      Percentage of bad items in a bad batch:         " << fileThree->getPercentageOfBadItems() << std::endl;
     std::cout << "      Number of items sampled:                        " << fileThree->getNumberOfItems() << std::endl;
+   
+    //Creating the Files
+    std::cout << "\nGenerating data set:\n" << std::endl;
+    for(int i=0; i < fileThree->getNumberOfBatches();i++) {
+
+        if(badBatch % (fileThree->getNumberOfBatches()/numberOfBatches) == 0){
+                    
+            std::cout << "      Create bad set Batch # " << badBatch << " ";
+            std::string fileName = "ds" + std::to_string(i) + ".txt";
+            bool isBad;    
+            int bad = 0;
+            float badPercentage = 0; 
+            DataStructureFile.open(fileName);
+            for(int j = 0; j < fileThree->getNumberOfItems(); j++) {
+                int rand = RandomNumber();
+               
+                    if(rand >= fileThree->getPercentageOfBadItems() - 1) {
+                        DataStructureFile << "g"   <<std::endl;
+                    } else {
+                        DataStructureFile << "b" << std::endl;
+                        bad++;
+                    }
+            }
+ 
+            badPercentage = bad;
+            badPercentage = badPercentage/fileThree->getNumberOfItems();
+            std::cout << "totBad = " << bad << " total = " << fileThree->getNumberOfItems() << " badpct = " << fileThree->getPercentageOfBadItems() << std::endl;
+        
+            DataStructureFile.close();
+                
+        } else {
+
+            std::string fileName = "ds" + std::to_string(i) + ".txt";
+            DataStructureFile.open(fileName);
+          
+            for(int j = 0; j < fileThree->getNumberOfItems(); j++) {
+
+                DataStructureFile << "g" << " " << rand <<std::endl;
+            }
+        
+            DataStructureFile.close();
+       }
+            badBatch++;
+    }
+
+    std::cout << "      Total Bad sets = " << numberOfBatches << std::endl;
     
+    //Analyzing the Files
+    std::cout << "\nAnalyzing Data Sets:" << std::endl;
+        
+    batch = 0;    
+    for(int i=0; i < fileThree->getNumberOfBatches(); i++) {
 
-    //Simulation 4 
+        std::string fileName = "ds";
+        fileName += std::to_string(i);
+        fileName += ".txt";
 
-    std::cout << "Simulation 4:" << std::endl;
+        SimulationFile.open(fileName);
+        int badItems = 0;
+        if(!SimulationFile.is_open()){
+            std::cout << "Unable to open " << fileName << std::endl;
+        } else {
+            
+            int checks = 0;
+            int j = 1;
+            while(!SimulationFile.eof()) {
+               
+                std::string read;
+                SimulationFile >> read;
+    
+                if(j % (fileThree->getNumberOfItems()/fileThree->getItemsSampled()) == 0) {
+                    checks++;
+                    if(read == "b"){
+                        badItems++;
+                    }
+                }
+                j++;
+            }
+       
+            if(badItems > 0) {
+                std::cout << "  batch #" << batch << " is bad" << std::endl;
+            }
+            SimulationFile.close();
+        }
+        batch++;
+
+    }
+    //Simulation 4
+    badBatch = 0;
+    std::srand(time(0));
+    flt = fileFour->getPercentageOfBadBatches()/100.0;
+
+    numberOfBatches = fileFour->getNumberOfBatches()*flt;
+    std::cout << "\n\nSimulation 4:" << std::endl;
     std::cout << "      Number of Batches of items:                     "  << fileFour->getNumberOfBatches()  << std::endl;
     std::cout << "      Number Of Items in each Batch:                  " << fileFour->getNumberOfItems() << std::endl;
     std::cout << "      Percentage of batches containing bad items:     " << fileFour->getPercentageOfBadBatches() << std::endl;
     std::cout << "      Percentage of bad items in a bad batch:         " << fileFour->getPercentageOfBadItems() << std::endl;
     std::cout << "      Number of items sampled:                        " << fileFour->getNumberOfItems() << std::endl;
-    
+   
+    //Creating the Files
+    std::cout << "\nGenerating data set:\n" << std::endl;
+    for(int i=0; i < fileFour->getNumberOfBatches();i++) {
 
+        if(badBatch % (fileFour->getNumberOfBatches()/numberOfBatches) == 0){
+                    
+            std::cout << "      Create bad set Batch # " << badBatch << " ";
+            std::string fileName = "ds" + std::to_string(i) + ".txt";
+            bool isBad;    
+            int bad = 0;
+            float badPercentage = 0; 
+            DataStructureFile.open(fileName);
+            for(int j = 0; j < fileFour->getNumberOfItems(); j++) {
+                int rand = RandomNumber();
+               
+                    if(rand >= fileFour->getPercentageOfBadItems() - 1) {
+                        DataStructureFile << "g"   <<std::endl;
+                    } else {
+                        DataStructureFile << "b" << std::endl;
+                        bad++;
+                    }
+            }
+ 
+            badPercentage = bad;
+            badPercentage = badPercentage/fileFour->getNumberOfItems();
+            std::cout << "totBad = " << bad << " total = " << fileFour->getNumberOfItems() << " badpct = " << fileFour->getPercentageOfBadItems() << std::endl;
+        
+            DataStructureFile.close();
+                
+        } else {
+
+            std::string fileName = "ds" + std::to_string(i) + ".txt";
+            DataStructureFile.open(fileName);
+          
+            for(int j = 0; j < fileFour->getNumberOfItems(); j++) {
+
+                DataStructureFile << "g" << " " << rand <<std::endl;
+            }
+        
+            DataStructureFile.close();
+       }
+            badBatch++;
+    }
+
+    std::cout << "      Total Bad sets = " << numberOfBatches << std::endl;
+    
+    //Analyzing the Files
+    std::cout << "\nAnalyzing Data Sets:" << std::endl;
+        
+    batch = 0;    
+    for(int i=0; i < fileFour->getNumberOfBatches(); i++) {
+
+        std::string fileName = "ds";
+        fileName += std::to_string(i);
+        fileName += ".txt";
+
+        SimulationFile.open(fileName);
+        int badItems = 0;
+        if(!SimulationFile.is_open()){
+            std::cout << "Unable to open " << fileName << std::endl;
+        } else {
+            
+            int checks = 0;
+            int j = 1;
+            while(!SimulationFile.eof()) {
+               
+                std::string read;
+                SimulationFile >> read;
+    
+                if(j % (fileFour->getNumberOfItems()/fileFour->getItemsSampled()) == 0) {
+                    checks++;
+                    if(read == "b"){
+                        badItems++;
+                    }
+                }
+                j++;
+            }
+       
+            if(badItems > 0) {
+                std::cout << "  batch #" << batch << " is bad" << std::endl;
+            }
+            SimulationFile.close();
+        }
+        batch++;
+
+    }
+   
 
 }
