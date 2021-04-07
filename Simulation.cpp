@@ -1,6 +1,9 @@
 #include "Simulation.h"
+#include "AnalyticalModel.h"
 #include <cstdlib>
 #include <ctime>
+
+
 int Simulation::RandomNumber() {
 
     
@@ -127,7 +130,6 @@ void Simulation::RunSimulation() {
                     
             std::cout << "      Create bad set Batch # " << badBatch << " ";
             std::string fileName = "ds" + std::to_string(i) + ".txt";
-            bool isBad;    
             int bad = 0;
             float badPercentage = 0; 
             DataStructureFile.open(fileName);
@@ -155,7 +157,7 @@ void Simulation::RunSimulation() {
           
             for(int j = 0; j < fileOne->getNumberOfItems(); j++) {
 
-                DataStructureFile << "g" << " " << rand <<std::endl;
+                DataStructureFile << "g"  <<std::endl;
             }
         
             DataStructureFile.close();
@@ -164,47 +166,12 @@ void Simulation::RunSimulation() {
     }
 
     std::cout << "      Total Bad sets = " << numberOfBatches << std::endl;
-    
     //Analyzing the Files
     std::cout << "\nAnalyzing Data Sets:" << std::endl;
         
-    int batch = 0;    
-    for(int i=0; i < fileOne->getNumberOfBatches(); i++) {
-
-        std::string fileName = "ds";
-        fileName += std::to_string(i);
-        fileName += ".txt";
-
-        SimulationFile.open(fileName);
-        int badItems = 0;
-        if(!SimulationFile.is_open()){
-            std::cout << "Unable to open " << fileName << std::endl;
-        } else {
-            
-            int checks = 0;
-            int j = 1;
-            while(!SimulationFile.eof()) {
-               
-                std::string read;
-                SimulationFile >> read;
-    
-                if(j % (fileOne->getNumberOfItems()/fileOne->getItemsSampled()) == 0) {
-                    checks++;
-                    if(read == "b"){
-                        badItems++;
-                    }
-                }
-                j++;
-            }
-       
-            if(badItems > 0) {
-                std::cout << "  batch #" << batch << " is bad" << std::endl;
-            }
-            SimulationFile.close();
-        }
-        batch++;
-
-    }
+    AnalyticalModel *am;
+    am = new AnalyticalModel();
+    am->AnalyzeFileData(fileOne->getNumberOfBatches(), fileOne->getNumberOfItems(), fileOne->getItemsSampled());
 
 
     //Simulation 2
@@ -228,7 +195,6 @@ void Simulation::RunSimulation() {
                     
             std::cout << "      Create bad set Batch # " << badBatch << " ";
             std::string fileName = "ds" + std::to_string(i) + ".txt";
-            bool isBad;    
             int bad = 0;
             float badPercentage = 0; 
             DataStructureFile.open(fileName);
@@ -256,7 +222,7 @@ void Simulation::RunSimulation() {
           
             for(int j = 0; j < fileTwo->getNumberOfItems(); j++) {
 
-                DataStructureFile << "g" << " " << rand <<std::endl;
+                DataStructureFile << "g" <<std::endl;
             }
         
             DataStructureFile.close();
@@ -269,43 +235,8 @@ void Simulation::RunSimulation() {
     //Analyzing the Files
     std::cout << "\nAnalyzing Data Sets:" << std::endl;
         
-    batch = 0;    
-    for(int i=0; i < fileTwo->getNumberOfBatches(); i++) {
-
-        std::string fileName = "ds";
-        fileName += std::to_string(i);
-        fileName += ".txt";
-
-        SimulationFile.open(fileName);
-        int badItems = 0;
-        if(!SimulationFile.is_open()){
-            std::cout << "Unable to open " << fileName << std::endl;
-        } else {
-            
-            int checks = 0;
-            int j = 1;
-            while(!SimulationFile.eof()) {
-               
-                std::string read;
-                SimulationFile >> read;
-    
-                if(j % (fileTwo->getNumberOfItems()/fileTwo->getItemsSampled()) == 0) {
-                    checks++;
-                    if(read == "b"){
-                        badItems++;
-                    }
-                }
-                j++;
-            }
-       
-            if(badItems > 0) {
-                std::cout << "  batch #" << batch << " is bad" << std::endl;
-            }
-            SimulationFile.close();
-        }
-        batch++;
-
-    }
+   
+    am->AnalyzeFileData(fileTwo->getNumberOfBatches(), fileOne->getNumberOfItems(), fileOne->getItemsSampled());
 
     //Simulation 3
     badBatch = 0;
@@ -328,7 +259,6 @@ void Simulation::RunSimulation() {
                     
             std::cout << "      Create bad set Batch # " << badBatch << " ";
             std::string fileName = "ds" + std::to_string(i) + ".txt";
-            bool isBad;    
             int bad = 0;
             float badPercentage = 0; 
             DataStructureFile.open(fileName);
@@ -356,7 +286,7 @@ void Simulation::RunSimulation() {
           
             for(int j = 0; j < fileThree->getNumberOfItems(); j++) {
 
-                DataStructureFile << "g" << " " << rand <<std::endl;
+                DataStructureFile << "g" <<std::endl;
             }
         
             DataStructureFile.close();
@@ -369,43 +299,8 @@ void Simulation::RunSimulation() {
     //Analyzing the Files
     std::cout << "\nAnalyzing Data Sets:" << std::endl;
         
-    batch = 0;    
-    for(int i=0; i < fileThree->getNumberOfBatches(); i++) {
-
-        std::string fileName = "ds";
-        fileName += std::to_string(i);
-        fileName += ".txt";
-
-        SimulationFile.open(fileName);
-        int badItems = 0;
-        if(!SimulationFile.is_open()){
-            std::cout << "Unable to open " << fileName << std::endl;
-        } else {
-            
-            int checks = 0;
-            int j = 1;
-            while(!SimulationFile.eof()) {
-               
-                std::string read;
-                SimulationFile >> read;
-    
-                if(j % (fileThree->getNumberOfItems()/fileThree->getItemsSampled()) == 0) {
-                    checks++;
-                    if(read == "b"){
-                        badItems++;
-                    }
-                }
-                j++;
-            }
-       
-            if(badItems > 0) {
-                std::cout << "  batch #" << batch << " is bad" << std::endl;
-            }
-            SimulationFile.close();
-        }
-        batch++;
-
-    }
+   
+    am->AnalyzeFileData(fileOne->getNumberOfBatches(), fileOne->getNumberOfItems(), fileOne->getItemsSampled());
     //Simulation 4
     badBatch = 0;
     std::srand(time(0));
@@ -427,7 +322,6 @@ void Simulation::RunSimulation() {
                     
             std::cout << "      Create bad set Batch # " << badBatch << " ";
             std::string fileName = "ds" + std::to_string(i) + ".txt";
-            bool isBad;    
             int bad = 0;
             float badPercentage = 0; 
             DataStructureFile.open(fileName);
@@ -455,7 +349,7 @@ void Simulation::RunSimulation() {
           
             for(int j = 0; j < fileFour->getNumberOfItems(); j++) {
 
-                DataStructureFile << "g" << " " << rand <<std::endl;
+                DataStructureFile << "g"  <<std::endl;
             }
         
             DataStructureFile.close();
@@ -466,45 +360,10 @@ void Simulation::RunSimulation() {
     std::cout << "      Total Bad sets = " << numberOfBatches << std::endl;
     
     //Analyzing the Files
-    std::cout << "\nAnalyzing Data Sets:" << std::endl;
-        
-    batch = 0;    
-    for(int i=0; i < fileFour->getNumberOfBatches(); i++) {
-
-        std::string fileName = "ds";
-        fileName += std::to_string(i);
-        fileName += ".txt";
-
-        SimulationFile.open(fileName);
-        int badItems = 0;
-        if(!SimulationFile.is_open()){
-            std::cout << "Unable to open " << fileName << std::endl;
-        } else {
-            
-            int checks = 0;
-            int j = 1;
-            while(!SimulationFile.eof()) {
-               
-                std::string read;
-                SimulationFile >> read;
-    
-                if(j % (fileFour->getNumberOfItems()/fileFour->getItemsSampled()) == 0) {
-                    checks++;
-                    if(read == "b"){
-                        badItems++;
-                    }
-                }
-                j++;
-            }
-       
-            if(badItems > 0) {
-                std::cout << "  batch #" << batch << " is bad" << std::endl;
-            }
-            SimulationFile.close();
-        }
-        batch++;
-
-    }
-   
+  
+    std::cout << "\nAnalyze Data Sets:" << std::endl;
+    am->AnalyzeFileData(fileOne->getNumberOfBatches(), fileOne->getNumberOfItems(), fileOne->getItemsSampled());
+  
+    delete am;
 
 }
